@@ -6,6 +6,8 @@ import { UsersModule } from './users/users.module';
 import { Role } from './roles/roles.model';
 import { RolesModule } from './roles/roles.module';
 import { UserRoles } from "./roles/user-roles.module";
+import { AuthController } from './auth/auth.controller';
+import { AuthModule } from './auth/auth.module';
 
 
 
@@ -27,7 +29,8 @@ import { UserRoles } from "./roles/user-roles.module";
 			autoLoadModels: true
 	}),
 		UsersModule,
-		RolesModule
+		RolesModule,
+		AuthModule
 	]
 })
 export class AppModule{}
